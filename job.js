@@ -8,7 +8,7 @@ let url = 'https://still-spire-37210.herokuapp.com/positions.json'
     let html2 = data.map(toPostHtml).join("");
     console.log(html2)
     let column = document.querySelector('#job-pannel')
-    column.innerHTML += html2
+    column.innerHTML = html2
   })
 function toPostHtml(jsn){
   return`
